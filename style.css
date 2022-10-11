@@ -20,3 +20,24 @@ button {
 #hover {
     background-color: rgb(160, 253, 74);
 }
+
+.menu1, 
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.5rem; */
+
+    /* border: 1px solid black; */
+    border-radius: 0 0 8px 8px;
+    width: 8rem;
+    
+    /* padding: 1rem 0 .8rm .3rem; */
+    background-color: bisque;
+}
+
+
+a {
+    text-decoration: none;
+    padding: .4rem 0 0 .3rem;
+    /* border: 1px solid black; */
+}
