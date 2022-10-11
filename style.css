@@ -21,8 +21,12 @@ button {
     background-color: rgb(160, 253, 74);
 }
 
-.menu1, 
-.menu2 {
+.menu-container1,
+.menu-container2 {
+    display: none;
+}
+
+.menu-items {
     display: flex;
     flex-direction: column;
     /* gap: 0.5rem; */
