@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 8rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+#click {
+    background-color: bisque;
+}
+
+#hover {
+    background-color: rgb(160, 253, 74);
+}
