@@ -1,6 +1,7 @@
 body {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    background-color: rgb(101, 101, 101);
 }
 
 button {
@@ -8,9 +9,12 @@ button {
     height: 4rem;
 
     border: none;
-    border-radius: 8px;
+    /* border-radius: 8px; */
 
     font-weight: bold;
+
+    /* display: inline-block; */
+    /* position: relative; */
 }
 
 #click {
@@ -24,6 +28,12 @@ button {
 .menu-container1,
 .menu-container2 {
     display: none;
+    /* position: absolute; */
+}
+
+.menu-display {
+    display: block;
+    position: absolute;
 }
 
 .menu-items {
@@ -36,7 +46,7 @@ button {
     width: 8rem;
     
     /* padding: 1rem 0 .8rm .3rem; */
-    background-color: bisque;
+    /* background-color: wheat; */
 }
 
 
