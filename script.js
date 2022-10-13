@@ -1,28 +1,24 @@
-let clickBtn = document.getElementById("click");
-let hoverBtn = document.getElementById("hover");
+// Element which toggles the menu with click must have its 1st class
+// name '.togglerClick'.
 
-let menuitem1 = document.querySelector(".menu-container1");
-let menuitem2 = document.querySelector(".menu-container2");
+// Toggler elements' and toggled elements' 2nd class must match each
+// other to establish relation.
 
-clickBtn.addEventListener('click', (e) => {
-    // Get element's position with offsetLeft.
-    showMenu(menuitem1, e);
-});
+// Toggler elements must come before toggled elements on html.
 
-hoverBtn.addEventListener('click', (e) => {
-    showMenu(menuitem2, e);
+window.addEventListener('click', e => {
+    // Only works on elements with '.togglerClick' class.
+    if (e.target.classList.contains('togglerClick')) {
+        let targetClass = e.target.classList[1];
+        // Toggler must come before toggled elements on html.
+        let menuItem = document.getElementsByClassName(targetClass)[1];
+        showMenu(menuItem, e);
+    }
 });
 
 function showMenu(menuDiv, parent) {
     let position = parent.target.offsetLeft + 'px';
-
-    // if (menuDiv.style.display !== "block") {
-    //     menuDiv.style.display = "block";
-    //     menuDiv.style.left = position;
-    //     menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
-    // } else {
-    //     menuDiv.style.display = "none";
-    // }
+    // Toggle .menu-display class on menuDiv.
     menuDiv.classList.toggle("menu-display");
     menuDiv.style.left = position;
     menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
