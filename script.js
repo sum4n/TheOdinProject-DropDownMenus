@@ -19,7 +19,24 @@ window.addEventListener('click', e => {
 function showMenu(menuDiv, parent) {
     let position = parent.target.offsetLeft + 'px';
     // Toggle .menu-display class on menuDiv.
-    menuDiv.classList.toggle("menu-display");
-    menuDiv.style.left = position;
-    menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
+    if (menuDiv.style.visibility != "visible") {
+        menuDiv.style.visibility = "visible";
+        // menuDiv.style.opacity = "100%";
+        menuDiv.style.left = position;
+        menuDiv.style.opacity = "100%";
+        console.log(menuDiv.firstElementChild.offsetHeight);
+        // menuDiv.style.transition = "transform 300ms ease-in-out";
+        menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
+    } else {
+        menuDiv.style.visibility = "hidden";
+        menuDiv.style.opacity = "0";
+        // menuDiv.style.left = "0";
+        // menuDiv.style.opacity = "0";
+    }
+    // menuDiv.classList.toggle("menu-display");
+    // menuDiv.style.left = position;
+    // menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
+    
+    // let x = parent.target.classList[1];
+    
 }

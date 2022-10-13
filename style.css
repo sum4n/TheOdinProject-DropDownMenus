@@ -19,12 +19,25 @@ button {
 
 .menu-container1,
 .menu-container2 {
-    display: none;
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    /* width: 8rem; */
+    /* height: 0; */
+    transition-property: opacity;
+    transition-duration: 2s;
+    
 }
 
 .menu-display {
     display: block;
-    position: absolute;
+    /* height: 0px; */
+    /* position: absolute; */
+    width: 450px;
+    transition: width 1s;
+    
+    
 }
 
 .menu-items {
