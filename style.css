@@ -1,20 +1,12 @@
 body {
-    /* display: flex; */
-    /* justify-content: space-around; */
     background-color: rgb(101, 101, 101);
 }
 
 button {
     width: 8rem;
     height: 4rem;
-
     border: none;
-    /* border-radius: 8px; */
-
     font-weight: bold;
-
-    /* display: inline-block; */
-    /* position: relative; */
 }
 
 #click {
@@ -28,7 +20,6 @@ button {
 .menu-container1,
 .menu-container2 {
     display: none;
-    /* position: absolute; */
 }
 
 .menu-display {
@@ -39,19 +30,12 @@ button {
 .menu-items {
     display: flex;
     flex-direction: column;
-    /* gap: 0.5rem; */
-
-    /* border: 1px solid black; */
     border-radius: 0 0 8px 8px;
     width: 8rem;
-    
-    /* padding: 1rem 0 .8rm .3rem; */
-    /* background-color: wheat; */
 }
 
 
 a {
     text-decoration: none;
     padding: .4rem 0 0 .3rem;
-    /* border: 1px solid black; */
 }
