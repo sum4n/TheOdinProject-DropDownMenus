@@ -22,22 +22,18 @@ button {
     display: block;
     position: absolute;
     visibility: hidden;
+    /* Transitioning with opacity. */
     opacity: 0;
-    /* width: 8rem; */
-    /* height: 0; */
-    transition-property: opacity;
-    transition-duration: 2s;
+    transition: opacity 1s;
+    
+    /* Need to create transform style on js to work */
+    /* transition: transform 300ms ease-in-out; */
     
 }
 
 .menu-display {
     display: block;
-    /* height: 0px; */
-    /* position: absolute; */
-    width: 450px;
-    transition: width 1s;
-    
-    
+    width: 450px; 
 }
 
 .menu-items {

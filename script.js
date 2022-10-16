@@ -21,22 +21,22 @@ function showMenu(menuDiv, parent) {
     // Toggle .menu-display class on menuDiv.
     if (menuDiv.style.visibility != "visible") {
         menuDiv.style.visibility = "visible";
-        // menuDiv.style.opacity = "100%";
+        // Set menuDiv to position right below clicked button.
         menuDiv.style.left = position;
+        // console.log(menuDiv.firstElementChild.offsetHeight);
+        
+        // Transition with changing the opacity value.
         menuDiv.style.opacity = "100%";
-        console.log(menuDiv.firstElementChild.offsetHeight);
-        // menuDiv.style.transition = "transform 300ms ease-in-out";
+        
+        // Transition with transform.
+        // menuDiv.style.transform = `translate(${position})`;
+
         menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
     } else {
         menuDiv.style.visibility = "hidden";
         menuDiv.style.opacity = "0";
-        // menuDiv.style.left = "0";
-        // menuDiv.style.opacity = "0";
+
+        // menuDiv.style.transform = "translate(0%, 0%)";
     }
-    // menuDiv.classList.toggle("menu-display");
-    // menuDiv.style.left = position;
-    // menuDiv.style.backgroundColor = window.getComputedStyle(parent.target).backgroundColor;
-    
-    // let x = parent.target.classList[1];
     
 }
